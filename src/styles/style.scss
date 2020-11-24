@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.header-bar-ctn{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: .5rem;
+    .user-ctn{
+        display: flex;
+        align-items: center;
+        .user{
+            margin: .5rem;
+            font-weight: lighter;
+            color: #616161;
+        }
+        .coins-ctn{
+            width: max-content;
+            display: flex;
+            align-items: center;
+            background-color: #ededed;
+            border-radius: 100px;
+            padding: .2rem;
+            .cant-coins{
+                margin: .2rem;
+                color: #616161;
+            }
+            .coin-icon{
+                width: 1.5rem;
+            }
+        }
+    }
+}
+
+.header-image-ctn{
+    position: relative;
+    .header-image{
+        width: 100%;
+    }  
+    .title{
+        position: absolute;
+        bottom: 1rem;
+        font-family: 'Source Sans Pro', sans-serif;
+        color: #FFFFFF;
+        padding: 1rem;  
+    }
+}
+
+.filter-ctn{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    .botonera{
+        display: flex;
+        flex-flow: row wrap;
+        width: 65%;
+        margin: 1rem 0 1rem 1rem;
+        .page{
+            color: #616161;
+            padding: .7rem;
+            border-right: 1px solid #d9d9d9;
+        }
+        .btns-ctn{
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-start;
+            .sort{
+                color: #a3a3a3;
+                padding: .7rem .7rem .7rem .7rem;
+            }
+            .button{
+                cursor: pointer;
+                background-color: #ededed;
+                color: #a3a3a3;
+                border: none;
+                width: max-content;
+                border-radius: 100px;
+                padding: 10px;
+                margin: 0 .2rem .2rem 0;
+                margin: .2rem .3rem;
+                &:active{
+                    background-color: #0ad4fa;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+    .move-page{
+        height: max-content;
+        .btn-move{
+            background: none;
+            border: none;
+            margin: 0 .3rem;
+            .slide{
+                cursor: pointer;
+                width: 2.5rem;
+            }
+        }
+    }
+    
+}

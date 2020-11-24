@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.header-bar-ctn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: .5rem;
+}
+
+.header-bar-ctn .user-ctn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-bar-ctn .user-ctn .user {
+  margin: .5rem;
+  font-weight: lighter;
+  color: #616161;
+}
+
+.header-bar-ctn .user-ctn .coins-ctn {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ededed;
+  border-radius: 100px;
+  padding: .2rem;
+}
+
+.header-bar-ctn .user-ctn .coins-ctn .cant-coins {
+  margin: .2rem;
+  color: #616161;
+}
+
+.header-bar-ctn .user-ctn .coins-ctn .coin-icon {
+  width: 1.5rem;
+}
+
+.header-image-ctn {
+  position: relative;
+}
+
+.header-image-ctn .header-image {
+  width: 100%;
+}
+
+.header-image-ctn .title {
+  position: absolute;
+  bottom: 1rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #FFFFFF;
+  padding: 1rem;
+}
+
+.filter-ctn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.filter-ctn .botonera {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 65%;
+  margin: 1rem 0 1rem 1rem;
+}
+
+.filter-ctn .botonera .page {
+  color: #616161;
+  padding: .7rem;
+  border-right: 1px solid #d9d9d9;
+}
+
+.filter-ctn .botonera .btns-ctn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.filter-ctn .botonera .btns-ctn .sort {
+  color: #a3a3a3;
+  padding: .7rem .7rem .7rem .7rem;
+}
+
+.filter-ctn .botonera .btns-ctn .button {
+  cursor: pointer;
+  background-color: #ededed;
+  color: #a3a3a3;
+  border: none;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 100px;
+  padding: 10px;
+  margin: 0 .2rem .2rem 0;
+  margin: .2rem .3rem;
+}
+
+.filter-ctn .botonera .btns-ctn .button:active {
+  background-color: #0ad4fa;
+  color: #FFFFFF;
+}
+
+.filter-ctn .move-page {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.filter-ctn .move-page .btn-move {
+  background: none;
+  border: none;
+  margin: 0 .3rem;
+}
+
+.filter-ctn .move-page .btn-move .slide {
+  cursor: pointer;
+  width: 2.5rem;
+}
+/*# sourceMappingURL=style.css.map */
