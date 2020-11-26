@@ -1,5 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
 
+$breakpoint-xlg: 1440px;
+$breakpoint-lg: 1024px;
+$breakpoint-md: 760px;
+
+@mixin respond-to($medias...) {
+    @each $media in $medias {
+        @if $media == xlg-screen {
+            @media screen and (min-width: $breakpoint-xlg) { @content; }
+        }
+        @else if $media == desktop-screen {
+            @media (min-width: $breakpoint-lg) { @content; }
+        }
+        @else if $media == tablet-screen {
+            @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) { @content; }
+        }
+    }
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -11,7 +29,7 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    padding: .5rem;
+    padding: 1rem 2rem;
     background-color: #f9f9f9;
     .user-ctn{
         display: flex;
@@ -41,47 +59,68 @@
 
 .header-image-ctn{
     position: relative;
+    background-color: #f9f9f9;
     .header-image{
         width: 100%;
     }  
     .title{
         position: absolute;
         bottom: 1rem;
+        left: 1rem;
         font-family: 'Source Sans Pro', sans-serif;
-        font-size: 4rem;
+        font-size: 2rem;
         color: #FFFFFF;
-        padding: 1rem 1rem 3rem 3rem;  
+        @include respond-to(tablet-screen, desktop-screen, xlg-screen){
+            font-size: 3rem;
+            bottom: 2rem;
+            left: 2rem;
+        }  
     }
 }
 .main{
     background-color: #f9f9f9;
+    padding-top: 3rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
     .filter-ctn{
+        width: 100%;
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
-        align-items: center;
+        // align-items: center;
+        align-items: flex-start;
+        @include respond-to(tablet-screen, desktop-screen, xlg-screen){
+            width: 90%;
+            justify-content: space-around;
+        } 
         .botonera{
             display: flex;
             flex-flow: row wrap;
-            width: 65%;
             margin: 1rem 0 1rem 1rem;
             .page{
-                font-size: 1.5rem;
+                font-size: 1rem;
                 color: #616161;
                 padding: .7rem;
                 border-right: 1px solid #d9d9d9;
+                @include respond-to(tablet-screen, desktop-screen, xlg-screen){
+                    font-size: 1.5rem;
+                } 
             }
             .btns-ctn{
                 display: flex;
                 flex-flow: row wrap;
                 align-items: flex-start;
                 .sort{
-                    font-size: 1.5rem;
+                    font-size: 1rem;
                     color: #a3a3a3;
                     padding: .7rem .7rem .7rem .7rem;
+                    @include respond-to(tablet-screen, desktop-screen, xlg-screen){
+                        font-size: 1.5rem;
+                    } 
                 }
                 .button{
-                    font-size: 1.2rem;
+                    font-size: 1rem;
                     cursor: pointer;
                     background-color: #ededed;
                     color: #a3a3a3;
@@ -89,8 +128,10 @@
                     width: max-content;
                     border-radius: 100px;
                     padding: 10px;
-                    margin: 0 .2rem .2rem 0;
-                    margin: .2rem .3rem;
+                    margin: .2rem;
+                    @include respond-to(tablet-screen, desktop-screen, xlg-screen){
+                        font-size: 1.1rem;
+                    } 
                     &:active{
                         background-color: #0ad4fa;
                         color: #FFFFFF;
@@ -100,6 +141,7 @@
         }
         .move-page{
             height: max-content;
+            padding: .7rem 0;
             .btn-move{
                 background: none;
                 border: none;
@@ -118,6 +160,9 @@
         flex-flow: row wrap;
         justify-content: center;
         width: 100%;
+        @include respond-to(tablet-screen, desktop-screen, xlg-screen){
+            width: 90%;
+        }  
         .product-card{
             background-color: #FFFFFF;
             display: flex;
@@ -126,14 +171,20 @@
             max-width: 276px;
             box-shadow:2px 2px 4px 0 rgba(0,0,0,0.10);
             margin: 1rem;
+            width: 40%;
+            @include respond-to(tablet-screen, desktop-screen, xlg-screen){
+                width: unset;
+            } 
             .images-ctn {
+                display: flex;
+                flex-flow: column nowrap;
+                align-items: center;
                 .product-image{
                     width: 90%;
                 }
                 .buy-icon{
-                    position: relative;
+                    align-self: flex-end;
                     width: 2rem;
-                    float: right;
                     margin: 1rem 1rem 0 1rem;
                 }
                 &:after{
