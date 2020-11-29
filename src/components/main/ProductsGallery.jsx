@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import ProductsServices from "../../services/productsServices";
 import ProductCard from "./ProductCard";
 
-function Productos() {
+function ProductosGallery() {
 
     const [products, setProdcuts] = useState([]);
 
@@ -11,7 +11,7 @@ function Productos() {
         setProdcuts(productsArray);
     }
 
-    useEffect(getProducts, []);
+    useEffect( () => getProducts(), []);
 
     return(
         <div className="products-gallery">
@@ -20,4 +20,4 @@ function Productos() {
     )
 }; 
 
-export default Productos;
+export default ProductosGallery;

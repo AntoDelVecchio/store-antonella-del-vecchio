@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import HoverCard from "./HoverCard";
 // import Overlay from './Overlay'
 
 import buyIcon from "../../assets/icons/buy-blue.svg";
@@ -10,11 +11,11 @@ function ProductCard(props) {
 
 // useEffect(()=> {console.log(product)}, [])
   return(
-
     <div className="product-card">
-      <div class="images-ctn">
+      <HoverCard cost={cost} id={_id}/>
+      <div className="images-ctn">
         <img src={buyIcon} alt="buy-icon" className="buy-icon" />
-        <img className="product-image" src={img.url} alt=""/>
+        <img className="product-image" src={img.url} alt={name}/>
       </div>
       <div className="text-box">
         <h4 className="product-category">{category}</h4>

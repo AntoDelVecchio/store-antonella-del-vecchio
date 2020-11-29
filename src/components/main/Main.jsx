@@ -1,12 +1,12 @@
 import React from "react";
 import Filter from "./Filter";
-import Productos from "./Productos";
+import ProductosGallery from "./ProductsGallery";
 
 function Main() {
     return(
         <div className="main">
             <Filter />
-            <Productos />
+            <ProductosGallery />
         </div>
     )
 }; 
