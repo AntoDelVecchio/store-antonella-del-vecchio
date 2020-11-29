@@ -1,26 +1,27 @@
 {
   "files": {
-    "main.css": "/store-antonella-del-vecchio/static/css/main.fc3a1772.chunk.css",
-    "main.js": "/store-antonella-del-vecchio/static/js/main.9633ea46.chunk.js",
-    "main.js.map": "/store-antonella-del-vecchio/static/js/main.9633ea46.chunk.js.map",
+    "main.css": "/store-antonella-del-vecchio/static/css/main.02e4c873.chunk.css",
+    "main.js": "/store-antonella-del-vecchio/static/js/main.ac2e82dd.chunk.js",
+    "main.js.map": "/store-antonella-del-vecchio/static/js/main.ac2e82dd.chunk.js.map",
     "runtime-main.js": "/store-antonella-del-vecchio/static/js/runtime-main.28208756.js",
     "runtime-main.js.map": "/store-antonella-del-vecchio/static/js/runtime-main.28208756.js.map",
-    "static/js/2.58f5aa00.chunk.js": "/store-antonella-del-vecchio/static/js/2.58f5aa00.chunk.js",
-    "static/js/2.58f5aa00.chunk.js.map": "/store-antonella-del-vecchio/static/js/2.58f5aa00.chunk.js.map",
+    "static/js/2.8ad4babe.chunk.js": "/store-antonella-del-vecchio/static/js/2.8ad4babe.chunk.js",
+    "static/js/2.8ad4babe.chunk.js.map": "/store-antonella-del-vecchio/static/js/2.8ad4babe.chunk.js.map",
     "index.html": "/store-antonella-del-vecchio/index.html",
-    "static/css/main.fc3a1772.chunk.css.map": "/store-antonella-del-vecchio/static/css/main.fc3a1772.chunk.css.map",
-    "static/js/2.58f5aa00.chunk.js.LICENSE.txt": "/store-antonella-del-vecchio/static/js/2.58f5aa00.chunk.js.LICENSE.txt",
+    "static/css/main.02e4c873.chunk.css.map": "/store-antonella-del-vecchio/static/css/main.02e4c873.chunk.css.map",
+    "static/js/2.8ad4babe.chunk.js.LICENSE.txt": "/store-antonella-del-vecchio/static/js/2.8ad4babe.chunk.js.LICENSE.txt",
     "static/media/aerolab-logo.0a8fb170.svg": "/store-antonella-del-vecchio/static/media/aerolab-logo.0a8fb170.svg",
     "static/media/arrow-left.e6eb9be1.svg": "/store-antonella-del-vecchio/static/media/arrow-left.e6eb9be1.svg",
     "static/media/arrow-right.3306c112.svg": "/store-antonella-del-vecchio/static/media/arrow-right.3306c112.svg",
     "static/media/buy-blue.c5c4f01c.svg": "/store-antonella-del-vecchio/static/media/buy-blue.c5c4f01c.svg",
+    "static/media/buy-white.9b6e6567.svg": "/store-antonella-del-vecchio/static/media/buy-white.9b6e6567.svg",
     "static/media/coin.b8bc711d.svg": "/store-antonella-del-vecchio/static/media/coin.b8bc711d.svg",
     "static/media/header-image.b6f067c6.png": "/store-antonella-del-vecchio/static/media/header-image.b6f067c6.png"
   },
   "entrypoints": [
     "static/js/runtime-main.28208756.js",
-    "static/js/2.58f5aa00.chunk.js",
-    "static/css/main.fc3a1772.chunk.css",
-    "static/js/main.9633ea46.chunk.js"
+    "static/js/2.8ad4babe.chunk.js",
+    "static/css/main.02e4c873.chunk.css",
+    "static/js/main.ac2e82dd.chunk.js"
   ]
 }
