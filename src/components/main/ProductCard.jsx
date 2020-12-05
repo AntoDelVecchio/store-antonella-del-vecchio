@@ -1,20 +1,29 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import HoverCard from "./HoverCard";
-// import Overlay from './Overlay'
-
+import { Context } from "../../contexts/contextProvider";
 import buyIcon from "../../assets/icons/buy-blue.svg";
+import coinIcon from "../../assets/icons/coin.svg";
 
 function ProductCard(props) {
 
-  let variableHover;
   const { _id, category, cost, img, name } = props;
+  const {user: {points}} = useContext(Context);
 
-// useEffect(()=> {console.log(product)}, [])
+  // useEffect(()=> {console.log(product)}, [])
   return(
     <div className="product-card">
-      <HoverCard cost={cost} id={_id}/>
+      { points > cost && <HoverCard cost={cost} id={_id}/> }
       <div className="images-ctn">
-        <img src={buyIcon} alt="buy-icon" className="buy-icon" />
+        {
+          points > cost ?
+          <img src={buyIcon} alt="buy-icon" className="buy-icon" />
+          :
+          <div className="buy-icon cant-buy">
+            <span className="remaining-coins">{`You need ${cost-points}`}</span>
+            <img className="coinIcon" src={coinIcon} alt="coin"/>
+          </div>
+        }
+        
         <img className="product-image" src={img.url} alt={name}/>
       </div>
       <div className="text-box">
