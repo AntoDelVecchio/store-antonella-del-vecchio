@@ -12,8 +12,8 @@ function AppProvider({ children }) {
     const [user, setUser] = useState({name:"", points:""});
 
     const getUserData = async () => {
-        const usuario = await UserServices.getUser();
-        setUser(usuario);
+        const userData = await UserServices.getUser();
+        setUser(userData);
     }
 
     useEffect( () => getUserData(), []);
