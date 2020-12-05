@@ -9,7 +9,7 @@ function AppProvider({ children }) {
 
     // ProductsServices.getProducts();
 
-    const [user, setUser] = useState({name:"", coins:""});
+    const [user, setUser] = useState({name:"", points:""});
 
     const getUserData = async () => {
         const usuario = await UserServices.getUser();
