@@ -1,17 +1,7 @@
-import React, { useEffect, useState } from "react";
-import ProductsServices from "../../services/productsServices";
+import React from "react";
 import ProductCard from "./ProductCard";
 
-function ProductosGallery() {
-
-    const [products, setProdcuts] = useState([]);
-
-    const getProducts = async () => {
-        const productsArray = await ProductsServices.getProducts();
-        setProdcuts(productsArray);
-    }
-
-    useEffect( () => getProducts(), []);
+function ProductsGallery({products}) {
 
     return(
         <div className="products-gallery">
@@ -20,4 +10,4 @@ function ProductosGallery() {
     )
 }; 
 
-export default ProductosGallery;
+export default ProductsGallery;

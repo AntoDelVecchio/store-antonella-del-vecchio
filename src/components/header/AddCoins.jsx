@@ -1,13 +1,12 @@
 import React from 'react';
-import userServices from '../../services/userServices';
 import coinImage from '../../assets/icons/coin.svg';
 import UserServices from '../../services/userServices';
 
 function AddCoins() {
 
-    const addMore = async (coins) => {
-        await UserServices.postCoins(coins);
-        alert(`Agregaste ${coins}`);
+    const addMore = async (amountCoins) => {
+        await UserServices.postCoins(amountCoins);
+        alert(`Agregaste ${amountCoins}`);
     }
 
     return (
