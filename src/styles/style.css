@@ -20,6 +20,7 @@
           justify-content: space-between;
   padding: 1rem 2rem;
   background-color: #f9f9f9;
+  position: relative;
 }
 
 .header-bar-ctn .user-ctn {
@@ -38,6 +39,7 @@
 }
 
 .header-bar-ctn .user-ctn .coins-ctn {
+  cursor: pointer;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -59,6 +61,40 @@
 
 .header-bar-ctn .user-ctn .coins-ctn .coin-icon {
   width: 1.5rem;
+}
+
+.add-more-coins {
+  position: absolute;
+  z-index: 10;
+  top: 3.7rem;
+  right: 1rem;
+  background-color: #edededa8;
+  padding: .7rem;
+  border-radius: 25px;
+}
+
+.add-more-coins .add-coins-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f9f9f9;
+  border: none;
+  margin: .7rem 0;
+  padding: .2rem .2rem .2rem .5rem;
+  border-radius: 100px;
+  color: #616161;
+}
+
+.add-more-coins .add-coins-button .coin-image {
+  width: 1.5rem;
+  margin: .2rem;
 }
 
 .header-image-ctn {

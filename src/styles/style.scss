@@ -31,6 +31,7 @@ $breakpoint-md: 760px;
     justify-content: space-between;
     padding: 1rem 2rem;
     background-color: #f9f9f9;
+    position: relative;
     .user-ctn{
         display: flex;
         align-items: center;
@@ -40,6 +41,7 @@ $breakpoint-md: 760px;
             color: #616161;
         }
         .coins-ctn{
+            cursor: pointer;
             width: max-content;
             display: flex;
             align-items: center;
@@ -53,6 +55,31 @@ $breakpoint-md: 760px;
             .coin-icon{
                 width: 1.5rem;
             }
+        }
+    }
+}
+
+.add-more-coins{
+    position: absolute;
+    z-index: 10;
+    top: 3.7rem;
+    right: 1rem;
+    background-color: #edededa8;
+    padding: .7rem;
+    border-radius: 25px;
+    .add-coins-button{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        background-color: #f9f9f9;
+        border: none;
+        margin: .7rem 0;
+        padding: .2rem .2rem .2rem .5rem;
+        border-radius: 100px;
+        color: #616161;
+        .coin-image{
+            width: 1.5rem;
+            margin: .2rem;
         }
     }
 }
