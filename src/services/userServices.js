@@ -13,14 +13,14 @@ class UserServices {
         }
     }
 
-    static async postCoins(cantCoins) {  //llamarlo sin crear un nuevo objeto de la clase
+    static async postCoins(amountCoins) {  //llamarlo sin crear un nuevo objeto de la clase
         const headers = {
             "Content-type" : "application/json",
             Authorization : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmNiYWQ3NjI2ZjdkMjAwMjA0MTE0YzYiLCJpYXQiOjE2MDcxODM3MzR9.8tw4EsTsWF43Ortf_dnCFCfitH96p2hYvqxpKHW5NEU"
         }
 
         const params = {
-            body: {amount: cantCoins},
+            body: {amount: amountCoins},
             method: "post",
             mode: "cors",
             headers
