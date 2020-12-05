@@ -68,6 +68,7 @@ $breakpoint-md: 760px;
     padding: .7rem;
     border-radius: 25px;
     .add-coins-button{
+        cursor: pointer;
         display: flex;
         flex-flow: row wrap;
         align-items: center;
@@ -104,6 +105,7 @@ $breakpoint-md: 760px;
         }  
     }
 }
+
 .main{
     background-color: #f9f9f9;
     padding-top: 3rem;
