@@ -83,7 +83,7 @@
   .header-image-ctn .title {
     font-size: 3rem;
     bottom: 2rem;
-    left: 5rem;
+    left: 7rem;
   }
 }
 
@@ -91,7 +91,7 @@
   .header-image-ctn .title {
     font-size: 3rem;
     bottom: 2rem;
-    left: 5rem;
+    left: 7rem;
   }
 }
 
@@ -99,7 +99,7 @@
   .header-image-ctn .title {
     font-size: 3rem;
     bottom: 2rem;
-    left: 5rem;
+    left: 7rem;
   }
 }
 
@@ -402,6 +402,39 @@
   margin: 0 auto;
   width: 90%;
   border-top: 1px solid #d9d9d9;
+}
+
+.main .products-gallery .product-card .images-ctn .cant-buy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  min-height: 42px;
+  background: #6161617e;
+  border-radius: 100px;
+  padding: .5rem;
+}
+
+.main .products-gallery .product-card .images-ctn .cant-buy .remaining-coins {
+  font-size: .8rem;
+  color: #FFFFFF;
+  margin: .2rem;
+}
+
+.main .products-gallery .product-card .images-ctn .cant-buy .coinIcon {
+  width: 1.5rem;
 }
 
 .main .products-gallery .product-card .text-box {
