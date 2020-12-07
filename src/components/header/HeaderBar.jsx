@@ -20,12 +20,12 @@ function HeaderBar() {
                 <img src={logo} alt="logo"/>
                 <div className="user-ctn">
                     <h3 className="user">{name}</h3>
-                    <div onClick={handleAddCoins}
+                    <button onClick={handleAddCoins}
                     className="coins-ctn" 
                     title="Add more coins">
                         <span className="cant-coins">{points}</span>
                         <img className="coin-icon" src={coinIcon} alt="coin"/>
-                    </div>
+                    </button>
                 </div>
             </div>
             {flag === false ? "" : <AddCoins />}
