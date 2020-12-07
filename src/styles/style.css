@@ -40,6 +40,7 @@
 
 .header-bar-ctn .user-ctn .coins-ctn {
   cursor: pointer;
+  outline: none;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -50,12 +51,17 @@
       -ms-flex-align: center;
           align-items: center;
   background-color: #ededed;
+  border: none;
   border-radius: 100px;
-  padding: .2rem;
+  padding: .1rem .3rem;
+}
+
+.header-bar-ctn .user-ctn .coins-ctn:hover {
+  opacity: .8;
 }
 
 .header-bar-ctn .user-ctn .coins-ctn .cant-coins {
-  margin: .2rem;
+  margin: .3rem;
   color: #616161;
 }
 
@@ -63,18 +69,45 @@
   width: 1.5rem;
 }
 
-.add-more-coins {
+.add-more-coins-container {
   position: absolute;
   z-index: 10;
-  top: 3.7rem;
-  right: 1rem;
-  background-color: #edededa8;
-  padding: .7rem;
-  border-radius: 25px;
+  top: 3.3rem;
+  right: 1.3rem;
+  background-color: #f9f9f9;
+  padding: .1rem .7rem .5rem .7rem;
+  border-radius: 0 0 15px 15px;
 }
 
-.add-more-coins .add-coins-button {
+.add-more-coins-container .add-coins-button {
   cursor: pointer;
+  outline: none;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ededed;
+  -webkit-box-shadow: 2px 2px 5px 0px #a3a3a3;
+          box-shadow: 2px 2px 5px 0px #a3a3a3;
+  border: none;
+  border-radius: 100px;
+  padding: .1rem .2rem;
+  margin: .7rem 0;
+}
+
+.add-more-coins-container .add-coins-button:hover {
+  -webkit-transform: translate(-1px, -2px);
+          transform: translate(-1px, -2px);
+}
+
+.add-more-coins-container .add-coins-button .coins-quantity-to-add {
+  margin: .2rem;
+  color: #616161;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -85,17 +118,16 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #f9f9f9;
-  border: none;
-  margin: .7rem 0;
-  padding: .2rem .2rem .2rem .5rem;
-  border-radius: 100px;
-  color: #616161;
 }
 
-.add-more-coins .add-coins-button .coin-image {
+.add-more-coins-container .add-coins-button .coin-icon {
   width: 1.5rem;
-  margin: .2rem;
+}
+
+.add-more-coins-container .add-coins-button .fa-plus {
+  font-size: .4rem;
+  color: #4BB543;
+  margin: 0 1px 0 0;
 }
 
 .header-image-ctn {
@@ -119,7 +151,7 @@
 @media (min-width: 760px) and (max-width: 1024px) {
   .header-image-ctn .title {
     font-size: 3rem;
-    bottom: 2rem;
+    bottom: 4rem;
     left: 7rem;
   }
 }
@@ -127,7 +159,7 @@
 @media (min-width: 1024px) {
   .header-image-ctn .title {
     font-size: 3rem;
-    bottom: 2rem;
+    bottom: 4rem;
     left: 7rem;
   }
 }
@@ -135,7 +167,7 @@
 @media screen and (min-width: 1440px) {
   .header-image-ctn .title {
     font-size: 3rem;
-    bottom: 2rem;
+    bottom: 4rem;
     left: 7rem;
   }
 }
@@ -272,6 +304,7 @@
 .main .filter-ctn .botonera .btns-ctn .button {
   font-size: 1rem;
   cursor: pointer;
+  outline: none;
   background-color: #ededed;
   color: #a3a3a3;
   border: none;
@@ -541,6 +574,7 @@
 
 .main .products-gallery .product-card .hover-card .redeem-btn {
   cursor: pointer;
+  outline: none;
   background: #ffffff;
   border: none;
   width: 10%;
