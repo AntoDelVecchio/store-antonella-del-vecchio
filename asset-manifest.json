@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/store-antonella-del-vecchio/static/css/main.a8012650.chunk.css",
-    "main.js": "/store-antonella-del-vecchio/static/js/main.c847139b.chunk.js",
-    "main.js.map": "/store-antonella-del-vecchio/static/js/main.c847139b.chunk.js.map",
+    "main.css": "/store-antonella-del-vecchio/static/css/main.0b6399ff.chunk.css",
+    "main.js": "/store-antonella-del-vecchio/static/js/main.06c73490.chunk.js",
+    "main.js.map": "/store-antonella-del-vecchio/static/js/main.06c73490.chunk.js.map",
     "runtime-main.js": "/store-antonella-del-vecchio/static/js/runtime-main.28208756.js",
     "runtime-main.js.map": "/store-antonella-del-vecchio/static/js/runtime-main.28208756.js.map",
-    "static/js/2.15ddecec.chunk.js": "/store-antonella-del-vecchio/static/js/2.15ddecec.chunk.js",
-    "static/js/2.15ddecec.chunk.js.map": "/store-antonella-del-vecchio/static/js/2.15ddecec.chunk.js.map",
+    "static/js/2.4211eed3.chunk.js": "/store-antonella-del-vecchio/static/js/2.4211eed3.chunk.js",
+    "static/js/2.4211eed3.chunk.js.map": "/store-antonella-del-vecchio/static/js/2.4211eed3.chunk.js.map",
     "index.html": "/store-antonella-del-vecchio/index.html",
-    "static/css/main.a8012650.chunk.css.map": "/store-antonella-del-vecchio/static/css/main.a8012650.chunk.css.map",
-    "static/js/2.15ddecec.chunk.js.LICENSE.txt": "/store-antonella-del-vecchio/static/js/2.15ddecec.chunk.js.LICENSE.txt",
+    "static/css/main.0b6399ff.chunk.css.map": "/store-antonella-del-vecchio/static/css/main.0b6399ff.chunk.css.map",
+    "static/js/2.4211eed3.chunk.js.LICENSE.txt": "/store-antonella-del-vecchio/static/js/2.4211eed3.chunk.js.LICENSE.txt",
     "static/media/aerolab-logo.0a8fb170.svg": "/store-antonella-del-vecchio/static/media/aerolab-logo.0a8fb170.svg",
     "static/media/arrow-left.e6eb9be1.svg": "/store-antonella-del-vecchio/static/media/arrow-left.e6eb9be1.svg",
     "static/media/arrow-right.3306c112.svg": "/store-antonella-del-vecchio/static/media/arrow-right.3306c112.svg",
@@ -20,8 +20,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.28208756.js",
-    "static/js/2.15ddecec.chunk.js",
-    "static/css/main.a8012650.chunk.css",
-    "static/js/main.c847139b.chunk.js"
+    "static/js/2.4211eed3.chunk.js",
+    "static/css/main.0b6399ff.chunk.css",
+    "static/js/main.06c73490.chunk.js"
   ]
 }
