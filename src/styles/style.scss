@@ -50,7 +50,10 @@ $breakpoint-md: 760px;
             background-color: #ededed;
             border: none;
             border-radius: 100px;
-            padding: .5rem;
+            padding: .3rem;
+            @include respond-to(tablet-screen, desktop-screen, xlg-screen){
+                padding: .5rem;
+            }
             &:hover{
                 opacity: .8;
             }
@@ -88,16 +91,16 @@ $breakpoint-md: 760px;
     background-color: #f9f9f9;
     padding: .1rem .5rem .5rem .5rem;
     border-radius: 0 0 15px 15px;
-    right: 1.2rem;
-    width: 20rem;
+    right: 4.5rem;
+    width: 19rem;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     @include respond-to(tablet-screen, desktop-screen, xlg-screen){
         width: inherit;
         flex-flow: column nowrap;
-        top: 3.7rem;
-        right: 4.5rem;
+        top: 4rem;
+        right: 5.2rem;
         padding: .1rem .5rem .5rem .5rem;
         border-radius: 0 0 15px 15px;
     }
@@ -112,10 +115,14 @@ $breakpoint-md: 760px;
         box-shadow: 2px 2px 5px 0px #a3a3a3;
         border: none;
         border-radius: 100px;
-        padding: .463rem .5rem;
+        height: 2.22rem;
         margin: .4rem 0;
         &:hover{
             transform: translate(-1px, -2px);
+        }
+        @include respond-to(tablet-screen, desktop-screen, xlg-screen) {
+            height: inherit;
+            padding: .463rem .5rem;
         }
         .coins-quantity-to-add{
             color: #616161;

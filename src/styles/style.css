@@ -56,7 +56,25 @@
   background-color: #ededed;
   border: none;
   border-radius: 100px;
-  padding: .5rem;
+  padding: .3rem;
+}
+
+@media (min-width: 760px) and (max-width: 1024px) {
+  .header-bar-ctn .user-ctn .coins-ctn {
+    padding: .5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header-bar-ctn .user-ctn .coins-ctn {
+    padding: .5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header-bar-ctn .user-ctn .coins-ctn {
+    padding: .5rem;
+  }
 }
 
 .header-bar-ctn .user-ctn .coins-ctn:hover {
@@ -99,8 +117,8 @@
   background-color: #f9f9f9;
   padding: .1rem .5rem .5rem .5rem;
   border-radius: 0 0 15px 15px;
-  right: 1.2rem;
-  width: 20rem;
+  right: 4.5rem;
+  width: 19rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -108,8 +126,9 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 @media (min-width: 760px) and (max-width: 1024px) {
@@ -119,8 +138,8 @@
     -webkit-box-direction: normal;
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
-    top: 3.7rem;
-    right: 4.5rem;
+    top: 4rem;
+    right: 5.2rem;
     padding: .1rem .5rem .5rem .5rem;
     border-radius: 0 0 15px 15px;
   }
@@ -133,8 +152,8 @@
     -webkit-box-direction: normal;
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
-    top: 3.7rem;
-    right: 4.5rem;
+    top: 4rem;
+    right: 5.2rem;
     padding: .1rem .5rem .5rem .5rem;
     border-radius: 0 0 15px 15px;
   }
@@ -147,8 +166,8 @@
     -webkit-box-direction: normal;
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
-    top: 3.7rem;
-    right: 4.5rem;
+    top: 4rem;
+    right: 5.2rem;
     padding: .1rem .5rem .5rem .5rem;
     border-radius: 0 0 15px 15px;
   }
@@ -172,13 +191,34 @@
           box-shadow: 2px 2px 5px 0px #a3a3a3;
   border: none;
   border-radius: 100px;
-  padding: .463rem .5rem;
+  height: 2.22rem;
   margin: .4rem 0;
 }
 
 .add-more-coins-container .add-coins-button:hover {
   -webkit-transform: translate(-1px, -2px);
           transform: translate(-1px, -2px);
+}
+
+@media (min-width: 760px) and (max-width: 1024px) {
+  .add-more-coins-container .add-coins-button {
+    height: inherit;
+    padding: .463rem .5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .add-more-coins-container .add-coins-button {
+    height: inherit;
+    padding: .463rem .5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .add-more-coins-container .add-coins-button {
+    height: inherit;
+    padding: .463rem .5rem;
+  }
 }
 
 .add-more-coins-container .add-coins-button .coins-quantity-to-add {
