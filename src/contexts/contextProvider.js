@@ -8,6 +8,7 @@ export { Context };
 function AppProvider({ children }) {
 
     // ProductsServices.getProducts();
+    const [products, setProducts] = useState([]);
 
     const [user, setUser] = useState({name:"", points:""});
 
@@ -19,7 +20,7 @@ function AppProvider({ children }) {
     useEffect( () => getUserData(), []);
 
     return (
-        <Context.Provider value={{ user }}>
+        <Context.Provider value={{ user, products, setProducts }}>
         {children}
         </Context.Provider>
     );
