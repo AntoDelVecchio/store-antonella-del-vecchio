@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
+import { Context } from "../../contexts/contextProvider";
 import imageHeader from "../../assets/header-image.png";
 
 function HeaderImage() {
+    
+    const {user: {redeemHistory},products} = useContext(Context);
+
     return(
         <div className="header-image-ctn">
             <img className="header-image" src={imageHeader} alt="electronics"/>
-            <h1 className="title">Electronics</h1>
+            <h1 className="title">{ products === redeemHistory ? "Redeem history" : "Electronics"}</h1>
         </div>
     )
 }; 
