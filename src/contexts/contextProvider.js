@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-// import ProductsServices from "../services/productsServices";
 import  UserServices from "../services/userServices";
 
 const Context = React.createContext();
@@ -7,7 +6,6 @@ export { Context };
 
 function AppProvider({ children }) {
 
-    // ProductsServices.getProducts();
     const [products, setProducts] = useState([]);
 
     const [user, setUser] = useState({name:"", points:""});
