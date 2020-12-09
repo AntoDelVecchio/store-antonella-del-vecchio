@@ -215,13 +215,14 @@ $breakpoint-md: 760px;
                 display: flex;
                 flex-flow: row wrap;
                 align-items: flex-start;
+                align-content: flex-end;
                 .sort-controls-ctn{
                     font-size: 1rem;
                     color: #a3a3a3;
                     padding: .7rem;
                     @include respond-to(tablet-screen, desktop-screen, xlg-screen){
                         font-size: 1.5rem;
-                        padding: .7rem .7rem .7rem 1.5rem;
+                        padding: 0 .7rem 0 1.5rem;
                     } 
                 }
                 .filter-btn{
@@ -237,6 +238,9 @@ $breakpoint-md: 760px;
                     margin: .2rem;
                     @include respond-to(tablet-screen, desktop-screen, xlg-screen){
                         font-size: 1.1rem;
+                        &:first-child{
+                            margin-left: 1.2rem;
+                        }
                     } 
                 }
                 .active{
@@ -247,7 +251,7 @@ $breakpoint-md: 760px;
         }
         .move-page{
             height: max-content;
-            margin: .7rem 0;
+            margin: 1rem 0;
             .btn-move{
                 outline: none;
                 background: none;

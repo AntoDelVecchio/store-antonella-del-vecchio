@@ -436,6 +436,8 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
 }
 
 .main .filter-ctn .botonera .btns-ctn .sort-controls-ctn {
@@ -447,21 +449,21 @@
 @media (min-width: 760px) and (max-width: 1024px) {
   .main .filter-ctn .botonera .btns-ctn .sort-controls-ctn {
     font-size: 1.5rem;
-    padding: .7rem .7rem .7rem 1.5rem;
+    padding: 0 .7rem 0 1.5rem;
   }
 }
 
 @media (min-width: 1024px) {
   .main .filter-ctn .botonera .btns-ctn .sort-controls-ctn {
     font-size: 1.5rem;
-    padding: .7rem .7rem .7rem 1.5rem;
+    padding: 0 .7rem 0 1.5rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .main .filter-ctn .botonera .btns-ctn .sort-controls-ctn {
     font-size: 1.5rem;
-    padding: .7rem .7rem .7rem 1.5rem;
+    padding: 0 .7rem 0 1.5rem;
   }
 }
 
@@ -484,17 +486,26 @@
   .main .filter-ctn .botonera .btns-ctn .filter-btn {
     font-size: 1.1rem;
   }
+  .main .filter-ctn .botonera .btns-ctn .filter-btn:first-child {
+    margin-left: 1.2rem;
+  }
 }
 
 @media (min-width: 1024px) {
   .main .filter-ctn .botonera .btns-ctn .filter-btn {
     font-size: 1.1rem;
   }
+  .main .filter-ctn .botonera .btns-ctn .filter-btn:first-child {
+    margin-left: 1.2rem;
+  }
 }
 
 @media screen and (min-width: 1440px) {
   .main .filter-ctn .botonera .btns-ctn .filter-btn {
     font-size: 1.1rem;
+  }
+  .main .filter-ctn .botonera .btns-ctn .filter-btn:first-child {
+    margin-left: 1.2rem;
   }
 }
 
@@ -507,7 +518,7 @@
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  margin: .7rem 0;
+  margin: 1rem 0;
 }
 
 .main .filter-ctn .move-page .btn-move {
