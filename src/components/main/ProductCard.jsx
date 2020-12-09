@@ -1,15 +1,14 @@
 import React, { useContext } from 'react';
-import HoverCard from "./HoverCard";
-import { Context } from "../../contexts/contextProvider";
 import buyIcon from "../../assets/icons/buy-blue.svg";
 import coinIcon from "../../assets/icons/coin.svg";
+import HoverCard from "./HoverCard";
+import { Context } from "../../contexts/contextProvider";
 
 function ProductCard(props) {
 
   const { _id, category, cost, img, name } = props;
   const {user: {points}} = useContext(Context);
 
-  // useEffect(()=> {console.log(product)}, [])
   return(
     <div className="product-card">
       { points > cost && <HoverCard cost={cost} id={_id}/> }
