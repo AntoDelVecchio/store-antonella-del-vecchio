@@ -1,14 +1,14 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useContext, useEffect, useState } from "react";
-import { Context } from "../../contexts/contextProvider";
 import logo from "../../assets/aerolab-logo.svg";
 import coinIcon from "../../assets/icons/coin.svg";
-import AddCoins from "./AddCoins";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
     faHome,
     faHistory
 } from '@fortawesome/free-solid-svg-icons';
+import AddCoins from "./AddCoins";
+import { Context } from "../../contexts/contextProvider";
 
 
 function HeaderBar() {

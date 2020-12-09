@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import { Context } from "../../contexts/contextProvider";
 import imageHeader from "../../assets/header-image.png";
+import { Context } from "../../contexts/contextProvider";
 
 function HeaderImage() {
     
