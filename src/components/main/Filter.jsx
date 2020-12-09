@@ -20,7 +20,9 @@ function Filter({products, setProducts}) {
                 <div className="btns-ctn">
                 <p className='sort-controls-ctn'>
                     Sort by:
-                    {params.map(({callback, wording}, i)=> <button key={i} className={`filter-btn ${activeFilter === i ?'active' : ''}`} onClick={()=>sortProducts(i,callback)}>{wording}</button>)}</p>
+                    {params.map(({callback, wording}, i) => 
+                    <button key={i} className={`filter-btn ${activeFilter === i ?'active' : ''}`} onClick={()=>sortProducts(i,callback)}>{wording}</button>)}
+                </p>
                 </div>
             </div>
             <div className="move-page">
