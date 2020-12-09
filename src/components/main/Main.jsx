@@ -7,8 +7,6 @@ import { Context } from "../../contexts/contextProvider";
 
 function Main() {
 
-    // const [products, setProducts] = useState([]);
-
     const {products, setProducts} = useContext(Context);
 
     const getProducts = async () => {
