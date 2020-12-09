@@ -6,6 +6,9 @@ class ProductsServices {
         }
         try {
             let response = await fetch("https://coding-challenge-api.aerolab.co/products", {headers} );
+            if(response.status !== 200) {
+                throw new Error("Ups, something went wrong!");
+            }
             response = await response.json();
             return response;
         } catch (error) {
@@ -20,6 +23,9 @@ class ProductsServices {
         }
         try {
             let response = await fetch("https://coding-challenge-api.aerolab.co/user/history", {headers} );
+            if(response.status !== 200) {
+                throw new Error("Ups, something went wrong!");
+            }
             response = await response.json();
             return response;
         } catch (error) {
@@ -42,6 +48,9 @@ class ProductsServices {
 
         try {
             let response = await fetch("https://private-anon-c888d91f1b-aerolabchallenge.apiary-mock.com/redeem", {params} );
+            if(response.status !== 200) {
+                throw new Error("Ups, something went wrong!");
+            }
             response = await response.json();
             return response;
         } catch (error) {
