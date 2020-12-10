@@ -1,18 +1,24 @@
-import React from "react";
+import React, { useContext } from "react";
 import buyIconHover from "../../assets/icons/buy-white.svg";
 import coinIcon from "../../assets/icons/coin.svg";
 import ProductsServices from "../../services/productsServices";
+import UserServices from "../../services/userServices";
+import {Context} from "../../contexts/contextProvider";
 
 function HoverCard(props) {
+
+    const {setUser} = useContext(Context);
 
     const{
         cost,
         _id
     } = props
 
-    const redeemProduct = () => {
-        ProductsServices.postRedeem(_id);
-        alert("funciona!!! producto canjeado exitosamente :D");
+    const redeemProduct = async () => {
+        await ProductsServices.postRedeem(_id);
+        const updatedUser = await UserServices.getUser();
+        setUser(updatedUser);
+        alert("Producto canjeado exitosamente!!!");
     }
 
     return(
