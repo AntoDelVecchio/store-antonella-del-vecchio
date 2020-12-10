@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import coinImage from '../../assets/icons/coin.svg';
 import UserServices from '../../services/userServices';
+import {Context} from '../../contexts/contextProvider';
 
 function AddCoins() {
 
+    const {setUser} = useContext(Context);
+
     const addMore = async (amountCoins) => {
-        await UserServices.postCoins(amountCoins);
-        alert(`Agregaste ${amountCoins}`);
+        const response = await UserServices.postCoins(amountCoins);
+        const updatedUser = await UserServices.getUser();
+        setUser(updatedUser);
+        alert(`${amountCoins} coins added. You now have ${response["new Points"]} coins!!`);
     }
 
     return (
