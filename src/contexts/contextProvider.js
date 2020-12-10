@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import  UserServices from "../services/userServices";
 
-const Context = React.createContext();
-export { Context };
+export const Context = React.createContext();
 
 function AppProvider({ children }) {
 
@@ -18,7 +17,7 @@ function AppProvider({ children }) {
     useEffect( () => getUserData(), []);
 
     return (
-        <Context.Provider value={{ user, products, setProducts }}>
+        <Context.Provider value={{ user, products, setUser, setProducts }}>
         {children}
         </Context.Provider>
     );
