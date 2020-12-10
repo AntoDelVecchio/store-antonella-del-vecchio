@@ -9,11 +9,12 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import AddCoins from "./AddCoins";
 import { Context } from "../../contexts/contextProvider";
+import UserServices from "../../services/userServices";
 
 
 function HeaderBar() {
 
-    const {user: {name, points, redeemHistory},products, setProducts} = useContext(Context);
+    const {user: {name, points},products, setProducts} = useContext(Context);
     const [showHistory, setHistoryFlag] = useState(false);
     const [auxProducts, setAuxProducts] = useState([]);
 
@@ -27,15 +28,16 @@ function HeaderBar() {
         setHistoryFlag(!showHistory);
     }
 
-    useEffect(() => {
-
-        if(products !== redeemHistory) {
+    const userRedeemHistory = async () => {
+        const redeemHistoryFetch = await UserServices.getHistory();
+        if(products !== redeemHistoryFetch) {
             setAuxProducts(products);
         }
 
-        setProducts((showHistory ? redeemHistory : auxProducts));
-
-    },[showHistory]);
+        setProducts((showHistory ? redeemHistoryFetch : auxProducts));
+        
+    }
+    useEffect(() => {userRedeemHistory();},[showHistory]);
 
     return(
         <div>
