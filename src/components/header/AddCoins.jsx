@@ -11,7 +11,7 @@ function AddCoins() {
         const response = await UserServices.postCoins(amountCoins);
         const updatedUser = await UserServices.getUser();
         setUser(updatedUser);
-        alert(`${amountCoins} coins added. You now have ${response["new Points"]} coins!!`);
+        alert(`${amountCoins} coins added.`);
     }
 
     return (
