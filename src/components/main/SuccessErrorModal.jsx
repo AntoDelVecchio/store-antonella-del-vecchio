@@ -6,17 +6,24 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { Context } from "../../contexts/contextProvider";
 
-function SuccessErrorModal({success}) {
+function SuccessErrorModal() {
 
     const {redeemState, setRedeemState} = useContext(Context);
 
     return(
         redeemState !== null ? (
-            <div className="success-container">
-            <FontAwesomeIcon icon={ success ? faSmileBeam : faFrownOpen} />
-            <h3>Success!!</h3>
-            <span></span>
-            <button onClick={() => setRedeemState(null)}>Okay!</button>
+            <div className="full-container">
+                <div className={`message-container ${redeemState ? "success-background" : "error-background"}`}>
+                    <FontAwesomeIcon icon={ redeemState ? faSmileBeam : faFrownOpen} className="icon-message" />
+                    <h3 className="message">{ redeemState ? "success!" : "error!"}</h3>
+                    <span className="large-message">
+                        { redeemState ? "thanks for your redeem, everything went wonderfully." : "oh no, something went wrong."}
+                    </span>
+                    <button onClick={() => setRedeemState(null)} className="close-button">
+                        { redeemState ? "great!" : "try again"}
+                    </button>
+                    {/* <button onClick={() => setRedeemState(!redeemState)}>Switch success/error message</button> */}
+                </div>
             </div>)
         : null
     )
