@@ -22,7 +22,6 @@ function SuccessErrorModal() {
                     <button onClick={() => setRedeemState(null)} className="close-button">
                         { redeemState ? "great!" : "try again"}
                     </button>
-                    {/* <button onClick={() => setRedeemState(!redeemState)}>Switch success/error message</button> */}
                 </div>
             </div>)
         : null
