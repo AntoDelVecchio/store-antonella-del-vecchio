@@ -11,11 +11,11 @@ function HoverCard(props) {
 
     const{
         cost,
-        _id
+        id
     } = props
 
     const redeemProduct = async () => {
-        await ProductsServices.postRedeem(_id);
+        await ProductsServices.postRedeem(id);
         const updatedUser = await UserServices.getUser();
         setUser(updatedUser);
         alert("Producto canjeado exitosamente!!!");
