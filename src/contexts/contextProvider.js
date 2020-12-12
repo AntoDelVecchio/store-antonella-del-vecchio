@@ -5,9 +5,11 @@ export const Context = React.createContext();
 
 function AppProvider({ children }) {
 
+    const [redeemState, setRedeemState] = useState(null);
+
     const [products, setProducts] = useState([]);
 
-    const [user, setUser] = useState({name:"", points:""});
+    const [user, setUser] = useState({name:"", points:"", redeemHistory:[] });
 
     const getUserData = async () => {
         const userData = await UserServices.getUser();
@@ -17,7 +19,7 @@ function AppProvider({ children }) {
     useEffect( () => getUserData(), []);
 
     return (
-        <Context.Provider value={{ user, products, setUser, setProducts }}>
+        <Context.Provider value={{ user, products, setUser, setProducts, redeemState, setRedeemState }}>
         {children}
         </Context.Provider>
     );
