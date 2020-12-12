@@ -8,7 +8,7 @@ function AddCoins() {
     const {setUser} = useContext(Context);
 
     const addMore = async (amountCoins) => {
-        const response = await UserServices.postCoins(amountCoins);
+        await UserServices.postCoins(amountCoins);
         const updatedUser = await UserServices.getUser();
         setUser(updatedUser);
         alert(`${amountCoins} coins added.`);
