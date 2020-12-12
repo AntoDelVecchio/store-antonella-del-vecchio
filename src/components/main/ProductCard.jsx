@@ -7,14 +7,14 @@ import { Context } from "../../contexts/contextProvider";
 function ProductCard(props) {
 
   const { _id, category, cost, img, name } = props;
-  const {user: {points}} = useContext(Context);
+  const {user: {points}, onHistory} = useContext(Context);
 
   return(
     <div className="product-card">
-      { points > cost && <HoverCard cost={cost} id={_id}/> }
+      { points > cost && !onHistory && <HoverCard cost={cost} id={_id}/> }
       <div className="images-ctn">
         {
-          points > cost ?
+          points > cost || onHistory ?
           <img src={buyIcon} alt="buy-icon" className="buy-icon" />
           :
           <div className="buy-icon cant-buy">
