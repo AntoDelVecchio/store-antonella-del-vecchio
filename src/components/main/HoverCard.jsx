@@ -7,18 +7,20 @@ import {Context} from "../../contexts/contextProvider";
 
 function HoverCard(props) {
 
-    const {setUser} = useContext(Context);
+    const {setUser, setRedeemState} = useContext(Context);
 
     const{
         cost,
         id
     } = props
 
+    let redeemS = null;
+
     const redeemProduct = async () => {
-        await ProductsServices.postRedeem(id);
+        redeemS = await ProductsServices.postRedeem(id);
         const updatedUser = await UserServices.getUser();
         setUser(updatedUser);
-        alert("Producto canjeado exitosamente!!!");
+        setRedeemState(redeemS);
     }
 
     return(
