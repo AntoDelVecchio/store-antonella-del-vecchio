@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/store-antonella-del-vecchio/static/css/main.3712a29b.chunk.css",
-    "main.js": "/store-antonella-del-vecchio/static/js/main.f210156a.chunk.js",
-    "main.js.map": "/store-antonella-del-vecchio/static/js/main.f210156a.chunk.js.map",
+    "main.css": "/store-antonella-del-vecchio/static/css/main.1b6bb174.chunk.css",
+    "main.js": "/store-antonella-del-vecchio/static/js/main.1a6ee344.chunk.js",
+    "main.js.map": "/store-antonella-del-vecchio/static/js/main.1a6ee344.chunk.js.map",
     "runtime-main.js": "/store-antonella-del-vecchio/static/js/runtime-main.28208756.js",
     "runtime-main.js.map": "/store-antonella-del-vecchio/static/js/runtime-main.28208756.js.map",
     "static/js/2.4b6517ce.chunk.js": "/store-antonella-del-vecchio/static/js/2.4b6517ce.chunk.js",
     "static/js/2.4b6517ce.chunk.js.map": "/store-antonella-del-vecchio/static/js/2.4b6517ce.chunk.js.map",
     "index.html": "/store-antonella-del-vecchio/index.html",
-    "static/css/main.3712a29b.chunk.css.map": "/store-antonella-del-vecchio/static/css/main.3712a29b.chunk.css.map",
+    "static/css/main.1b6bb174.chunk.css.map": "/store-antonella-del-vecchio/static/css/main.1b6bb174.chunk.css.map",
     "static/js/2.4b6517ce.chunk.js.LICENSE.txt": "/store-antonella-del-vecchio/static/js/2.4b6517ce.chunk.js.LICENSE.txt",
     "static/media/aerolab-logo.0a8fb170.svg": "/store-antonella-del-vecchio/static/media/aerolab-logo.0a8fb170.svg",
     "static/media/arrow-left.e6eb9be1.svg": "/store-antonella-del-vecchio/static/media/arrow-left.e6eb9be1.svg",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.28208756.js",
     "static/js/2.4b6517ce.chunk.js",
-    "static/css/main.3712a29b.chunk.css",
-    "static/js/main.f210156a.chunk.js"
+    "static/css/main.1b6bb174.chunk.css",
+    "static/js/main.1a6ee344.chunk.js"
   ]
 }
