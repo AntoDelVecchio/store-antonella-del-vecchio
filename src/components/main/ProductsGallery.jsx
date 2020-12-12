@@ -5,7 +5,7 @@ function ProductsGallery({products}) {
 
     return(
         <div className="products-gallery">
-            {products.map(product => <ProductCard key={product._id} {...product}/> )}
+            {products.map((product, i) => <ProductCard key={product._id + i} {...product}/> )}
         </div>
     )
 }; 
