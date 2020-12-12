@@ -18,8 +18,10 @@ function AppProvider({ children }) {
 
     useEffect( () => getUserData(), []);
 
+    const onHistory = products.toString() === user.redeemHistory.toString(); 
+
     return (
-        <Context.Provider value={{ user, products, setUser, setProducts, redeemState, setRedeemState }}>
+        <Context.Provider value={{ user, products, setUser, setProducts, redeemState, setRedeemState, onHistory }}>
         {children}
         </Context.Provider>
     );
