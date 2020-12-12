@@ -15,7 +15,7 @@ import UserServices from "../../services/userServices";
 function HeaderBar() {
 
     const {user: {name, points},products, setProducts} = useContext(Context);
-    const [showHistory, setHistoryFlag] = useState(false);
+    const [showHistory, setHistoryFlag] = useState(null);
     const [auxProducts, setAuxProducts] = useState([]);
 
     const [flag, setFlag] = useState(false);
@@ -37,7 +37,11 @@ function HeaderBar() {
         setProducts((showHistory ? redeemHistoryFetch : auxProducts));
         
     }
-    useEffect(() => {userRedeemHistory();},[showHistory]);
+    useEffect(() => {
+        if(showHistory != null){
+            userRedeemHistory();
+        }
+    },[showHistory]);
 
     return(
         <div>
