@@ -11,6 +11,8 @@ function AppProvider({ children }) {
 
     const [user, setUser] = useState({name:"", points:"", redeemHistory:[] });
 
+    const [onHistory, setOnHistory] = useState(false); 
+
     const getUserData = async () => {
         const userData = await UserServices.getUser();
         setUser(userData);
@@ -18,10 +20,8 @@ function AppProvider({ children }) {
 
     useEffect( () => getUserData(), []);
 
-    const onHistory = products.toString() === user.redeemHistory.toString(); 
-
     return (
-        <Context.Provider value={{ user, products, setUser, setProducts, redeemState, setRedeemState, onHistory }}>
+        <Context.Provider value={{ user, products, setUser, setProducts, redeemState, setRedeemState, onHistory, setOnHistory }}>
         {children}
         </Context.Provider>
     );
