@@ -16,11 +16,13 @@ function HoverCard(props) {
 
     let redeemS = null;
 
-    const redeemProduct = async () => {
+    const redeemProduct = async (event) => {
+        event.target.disabled = true;
         redeemS = await ProductsServices.postRedeem(id);
+        setRedeemState(redeemS);
         const updatedUser = await UserServices.getUser();
         setUser(updatedUser);
-        setRedeemState(redeemS);
+        event.target.disabled = false;
     }
 
     return(
