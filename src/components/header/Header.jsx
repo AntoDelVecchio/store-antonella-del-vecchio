@@ -4,10 +4,10 @@ import HeaderImage from "./HeaderImage";
 
 function Header() {
     return(
-        <div>
+        <header>
             <HeaderBar />
             <HeaderImage />
-        </div>
+        </header>
     )
 }; 
 
