@@ -4,7 +4,7 @@ import chevronRigth from "../../assets/icons/arrow-right.svg";
 
 function Footer({prevPage, nextPage, maxProducts, shownMaxProductsInfo}) {
     return(
-        <div className="footer">
+        <footer className="footer">
             <div className="pages-container">
                 <span className="page">{`${shownMaxProductsInfo} of ${maxProducts} products`}</span>
             </div>
@@ -16,7 +16,7 @@ function Footer({prevPage, nextPage, maxProducts, shownMaxProductsInfo}) {
                     <img className="slide" src={chevronRigth} alt="rigth"/>
                 </button>
             </div>
-        </div>
+        </footer>
     )
 }; 
 

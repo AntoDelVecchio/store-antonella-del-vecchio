@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import Filter from "./Filter";
 import Footer from "./Footer";
-import ProductosGallery from "./ProductsGallery";
+import ProductsGallery from "./ProductsGallery";
 import ProductsServices from "../../services/productsServices";
 import { Context } from "../../contexts/contextProvider";
 import usePagination from "../../utils/Pagination";
@@ -20,11 +20,11 @@ function Main() {
     useEffect( () => getProducts(), []);
 
     return(
-        <div className="main">
+        <main className="main">
             <Filter products={products} setProducts = {setProducts} nextPage={nextPage} prevPage={prevPage} maxProducts={maxProducts} shownMaxProductsInfo={shownMaxProductsInfo} />
-            <ProductosGallery products={currentItems()} />
+            <ProductsGallery products={currentItems()} />
             <Footer nextPage={nextPage} prevPage={prevPage} maxProducts={maxProducts} shownMaxProductsInfo={shownMaxProductsInfo}/>
-        </div>
+        </main>
     )
 }; 
 
