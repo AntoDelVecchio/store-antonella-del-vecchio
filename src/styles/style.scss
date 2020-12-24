@@ -282,6 +282,11 @@ $breakpoint-md: 760px;
                 .slide{
                     cursor: pointer;
                     width: 3rem;
+                    &:hover{
+                        border-radius: 50%;
+                        box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.10);
+                        background-color: white;
+                    }
                 }
             }
         }
@@ -532,8 +537,51 @@ $breakpoint-md: 760px;
             .slide{
                 cursor: pointer;
                 width: 3rem;
+                &:hover{
+                    border-radius: 50%;
+                    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.10);
+                    background-color: white;
+                }
             }
+            
         }
     }
 }
+
+.alert-message-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    z-index: 2000;
+    .add-coins-alert {
+        text-align: center;
+        position: fixed;
+        align-self: center;
+        top: 0.5rem;
+        width: 90%;
+        max-width: 500px;
+        background-color: #008eec9c;
+        color: white;
+        border-radius: 0.5rem;
+        padding: 1rem 0.7rem;
+        .status-icon {
+            display: inline-block;
+            margin-right: 0.7rem;
+        }
+        .message {
+            display: inline-block;
+            font-weight: 400;
+            margin: 0;
+        }
+        &.success {
+            background-color: #75f04494;
+        }
+        &.error {
+            background-color: rgba(255, 27, 57, 0.644);
+        }
+    }    
+}
+
+
 

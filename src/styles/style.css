@@ -573,6 +573,13 @@
   width: 3rem;
 }
 
+.main .filter-ctn .move-page .btn-move .slide:hover {
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
 .main .products-gallery {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1033,5 +1040,58 @@
 .footer .move-page .btn-move .slide {
   cursor: pointer;
   width: 3rem;
+}
+
+.footer .move-page .btn-move .slide:hover {
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.alert-message-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  z-index: 2000;
+}
+
+.alert-message-container .add-coins-alert {
+  text-align: center;
+  position: fixed;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  top: 0.5rem;
+  width: 90%;
+  max-width: 500px;
+  background-color: #008eec9c;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 1rem 0.7rem;
+}
+
+.alert-message-container .add-coins-alert .status-icon {
+  display: inline-block;
+  margin-right: 0.7rem;
+}
+
+.alert-message-container .add-coins-alert .message {
+  display: inline-block;
+  font-weight: 400;
+  margin: 0;
+}
+
+.alert-message-container .add-coins-alert.success {
+  background-color: #75f04494;
+}
+
+.alert-message-container .add-coins-alert.error {
+  background-color: rgba(255, 27, 57, 0.644);
 }
 /*# sourceMappingURL=style.css.map */
