@@ -14,11 +14,11 @@ import UserServices from "../../services/userServices";
 
 function HeaderBar() {
 
-    const {user: {name, points},products, setProducts} = useContext(Context);
+    const {user: {name, points},products, setProducts, setOnHistory} = useContext(Context);
     const [showHistory, setHistoryFlag] = useState(null);
     const [auxProducts, setAuxProducts] = useState([]);
 
-    const [flag, setFlag] = useState(false);
+    const [flag, setFlag] = useState(false); //uso esto ara mostrar o no el modal de compra de monedas
 
     const handleAddCoins = () => {
         setFlag(!flag);
@@ -33,9 +33,8 @@ function HeaderBar() {
         if(products !== redeemHistoryFetch) {
             setAuxProducts(products);
         }
-
         setProducts((showHistory ? redeemHistoryFetch : auxProducts));
-        
+        setOnHistory(showHistory);
     }
     useEffect(() => {
         if(showHistory != null){
@@ -44,7 +43,7 @@ function HeaderBar() {
     },[showHistory]);
 
     return(
-        <div>
+        <nav>
             <div className="header-bar-ctn">
                 <img src={logo} alt="logo"/>
                 <div className="user-ctn">
@@ -55,11 +54,11 @@ function HeaderBar() {
                         <span className="cant-coins">{points}</span>
                         <img className="coin-icon" src={coinIcon} alt="coin"/>
                     </button>
-                    <button className="header-button" onClick={handleHistory} title={`see ${name} history`}>{showHistory === false ? <FontAwesomeIcon icon={faHistory} /> : <FontAwesomeIcon icon={faHome} /> }</button> 
+                    <button className="header-button" onClick={handleHistory} title={`see ${name} history`}>{!showHistory ? <FontAwesomeIcon icon={faHistory} /> : <FontAwesomeIcon icon={faHome} /> }</button> 
                 </div>
             </div>
-            {flag === false ? "" : <AddCoins />}
-        </div>
+            {flag && <AddCoins />}
+        </nav>
     )
 }; 
 
